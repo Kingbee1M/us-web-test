@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import type { ReactNode, MouseEventHandler } from "react";
 
 type ButtonVariant = "primary" | "secondary" | "tertiary" | "border";
@@ -20,9 +20,6 @@ interface ButtonProps {
 
 const Button = ({
   children,
-  onClick,
-  scrollTo,
-  to,
   variant = "primary",
   size = "medium",
   className = "",
@@ -32,16 +29,19 @@ const Button = ({
 }: ButtonProps) => {
   const navigate = useNavigate();
 
-  const handleClick: MouseEventHandler<HTMLButtonElement> = (e) => {
-    onClick?.(e);
+  const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
+    console.log("Navigating to contact page");
 
-    if (to) {
-      navigate(to, { state: { scrollTo } });
-    }
+    navigate("/contact us", {
+      state: { scrollTo: "contact-form" },
+    });
   };
 
+
+
+
   const baseClasses =
-    "w-auto rounded transition-colors duration-200 focus:outline-none flex items-center gap-0.5";
+    "w-auto rounded transition-colors duration-200 focus:outline-none flex items-center gap-0.5 cursor-pointer";
 
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-[#ff6600] hover:bg-hover-orange text-white",

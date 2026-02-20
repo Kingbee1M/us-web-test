@@ -12,6 +12,8 @@ import USAboutUs from "./USAboutsUs.tsx";
 import USAContactus from "./USAContactUs.tsx";
 import USAServices from "./USAServices.tsx";
 import USIndustries from "./USIndustries.tsx";
+import ErrorBoundary from "./Components/errorBoundry.tsx";
+import NotFound from "./UI/notFound.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,11 +36,15 @@ const router = createBrowserRouter([
     path: "/industries",
     element: <USIndustries />,
   },
+
+  { path: "*", element: <NotFound /> },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
   </StrictMode>
 );
 

@@ -11,9 +11,9 @@ const Blog = () => {
 
     //will change to api data later
     const blogPosts = [
-        {img: img1, date: '25/10/2026', title: 'The Future of Customer Service: AI Meets Empathy', desc: 'Discover how combining artificial intelligence with emotional intelligence not only that our staff is of the highest quality', link: 'https://docs.google.com/document/d/1PVxDaBr4j9zc-ak0_xt32JqbnQ20o256d6THgOI8dWM/edit?usp=drivesdk'},
-        {img: img2, date: '25/10/2026', title: '5 Ways Outsourcing Boosts Customer Retention', desc: 'Learn the strategies successful companies use to improve customer loyal', link: 'https://docs.google.com/document/d/1XYZkbyPEpZggLzSZi38_13xf7qAoGJC7NNEysvdPn1M/edit?usp=drivesdk'},
-        {img: img3, date: '25/10/2026', title: 'The Future of Customer Service: AI Meets Empathy', desc: 'The measurable impact of EI-trained customer service teams on your bottom...', link: 'https://docs.google.com/document/d/1Z_gvn0BZICcA3H1Zi-y8uKkfqDu365DHIby5nXS8qbA/edit?usp=drivesdk'},
+        {img: img1, date: '25/10/2026', title: 'Making US Health-Care Easier ', desc: (<>It&apos;s no news that the US health-care has had lots of complaints in the past years due to slow response or no response at all…</>), link: 'https://docs.google.com/document/d/1PVxDaBr4j9zc-ak0_xt32JqbnQ20o256d6THgOI8dWM/edit?usp=drivesdk'},
+        {img: img2, date: '25/10/2026', title: 'Evaluating Cloud Solutions for Business Optimization ', desc: 'Cloud solutions let you run apps, store data, and scale services over the internet instead of expensive local servers. For US brands, that means faster launches, easier collaboration, and the ability to scale up during busy moments — all without building and managing a physical data center.', link: 'https://docs.google.com/document/d/1XYZkbyPEpZggLzSZi38_13xf7qAoGJC7NNEysvdPn1M/edit?usp=drivesdk'},
+        {img: img3, date: '25/10/2026', title: 'The Ultimate Customer Leverage: Give Them Control', desc: (<>Think about the last time you ignored a call, deleted a marketing email, or abandoned a checkout because the process was long. Customers do the same — and fast. Today&apos;s consumers expect to be reached on their terms: the channel they prefer, at the moment they&apos;re ready, with an experience that doesn&apos;t waste their time.</>), link: 'https://docs.google.com/document/d/1Z_gvn0BZICcA3H1Zi-y8uKkfqDu365DHIby5nXS8qbA/edit?usp=drivesdk'},
     ]
 
     function formatDate(dateStr: string) {
@@ -36,13 +36,13 @@ const Blog = () => {
                 {blogPosts.map((post, index) => (
                     <div key={index} className='w-75 lg:w-125 h-100 flex flex-col gap-2 p-3 bg-white shadow-2xl rounded-lg border border-[#d5d5d5]'>
                         <div className='w-full'>
-                            <img src={post.img} alt={post.title} className='w-full contain'/>
+                            <img src={post.img} alt={post.date} className='w-full contain'/>
                         </div>
                         <div className='flex items-center gap-2'>
                             <CiCalendar className='text-text-color' />
                             <p className='text-xs text-text-color'>{formatDate(post.date)}</p>
                         </div>
-                        <h3 className='font-montserrat font-demibold'>{post.title}</h3>
+                        <h3 className='font-montserrat font-demibold line-clamp-2'>{post.title}</h3>
                         <p className='text-text-color text-[14px] font-montserrat line-clamp-2'>{post.desc}</p>
                         <a href={post.link} target='blank' className='text-[#f04217] flex items-center gap-2 font-montserrat text-sm'>Read More <FaArrowRight /></a>
                     </div>

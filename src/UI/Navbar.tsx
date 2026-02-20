@@ -50,7 +50,7 @@ export default function Navbar () {
 
       {/* main interface for desktop View  */}
       <div className="w-full flex justify-between items-center ">
-        <img src={logo} className="w-36 contain" alt="logo" />
+        <NavLink to={'/'}><img src={logo} className="w-36 contain" alt="logo" /></NavLink>
 
         <div className={`w-[30%] justify-between items-center hidden flex-col xl:flex xl:flex-row`}>
         {Object.keys(USlinks).map((key) => (
