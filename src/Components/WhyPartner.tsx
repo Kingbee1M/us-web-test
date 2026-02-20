@@ -1,0 +1,66 @@
+import { useState } from "react";
+import { IoChevronBack, IoChevronForward } from "react-icons/io5";
+import Button from "../UI/Button";
+
+const WhyPartner = () => {
+  const reasons = [
+    {title: 'Industry Expertise', desc: 'Deep understanding of industry specific challenges'},
+    {title: 'Compliance Ready', desc: 'Regulation-aligned processes you can trust'},
+    {title: 'Mutilingual Support', desc: 'Reach divers customer base globally'},
+    {title: 'Proven Track Record', desc: 'Success across healthcare, fintech, e-commerce & more'},
+    {title: 'Talored Solutions', desc: 'Custom Outsourcing designed for you market'},
+  ];
+
+  const [index, setIndex] = useState(0);
+  const current = reasons[index];
+
+    const change = (direction: "next" | "prev") => {
+        if (direction === "next") {
+        setIndex((prev) => (prev + 1) % reasons.length);
+        } else {
+        setIndex((prev) => (prev - 1 + reasons.length) % reasons.length);
+        }
+    };
+    return (
+        <div className="w-full flex flex-col items-center gap-4">
+            <h2 className="text-4xl font-bold text-center font-garamond">Why Partner with Outcess US?</h2>
+            <p className="text-base sm:text-xl font-montserrat text-center text-2/3 w-[96%] lg:w-[55%] ">
+            Built to elevate performance, reduce costs, and deliver the outcomes your business cares about most.
+            </p>
+
+            <div className="w-full lg:w-[70%] flex justify-between items-center bg-[#F3E5F5] p-8 md:px-24 py-12 mt-16">
+            <h2 className="lg:text-5xl xl:leading-14 text-3xl font-demibold w-1/5 font-garamond">{current.title}</h2>
+
+            <div className="w-2/5 sm:w-[30%] flex flex-col items-center gap-3">
+                <p className="text-base xl:text-base text-text-color w-full lg:w-[80%] font-montserrat">{current.desc}</p>
+
+                <div className="flex items-center gap-4">
+                
+                <button
+                    onClick={() => change("prev")}
+                    className="text-3xl rounded-full bg-[#F3E5F5]"
+                >
+                    <IoChevronBack />
+                </button>
+
+                {/* index display */}
+                <p>{index + 1}/{reasons.length}</p>
+
+                <button
+                    onClick={() => change("next")}
+                    className="text-3xl rounded-full bg-[#F3E5F5]"
+                >
+                    <IoChevronForward />
+                </button>
+
+                </div>
+            </div>
+            </div>
+
+            <Button variant="primary" className="my-16">Work with Us</Button>
+        </div>
+
+    )
+}
+
+export default WhyPartner;
