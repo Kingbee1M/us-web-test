@@ -15,7 +15,7 @@ const AboutHeader = () => {
             <Button variant="primary">Partner With Outcess US</Button>
             
             <div className="lg:w-225 md:w-175 sm:w-137.5 w-112.5 flex justify-center items-center">
-                <VideoPlayer width={1000} src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view?usp=sharing'} />
+                <VideoPlayer width={1000} src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view'} />
             </div>
         </div>
     )

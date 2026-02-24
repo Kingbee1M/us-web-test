@@ -1,8 +1,9 @@
 
 import logo from "../assets/svg/logosvg.svg"
 import { Link } from "react-router";
-import { FaTwitter, FaFacebook} from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
+
 
 type NavLinks = Record<string, Record<string, string>>;
 
@@ -63,9 +64,8 @@ const FooterUS = () => {
             <div className="w-full flex justify-between items-center, xs:pl-5 py-16 xs:pr-24 sm:px-24 bg-[#F04217] text-white">
                 <p>© 2025 Outcess. All rights reserved.</p>
                 <div className="flex items-center gap-3 text-white">
-                    <a href="https://www.linkedin.com/company/outcess/" target="blank" className="text-white decoration-none text-lg sm:text-3xl"><FaTwitter /></a>
-                    <a href="https://www.linkedin.com/company/outcess/" target="blank"  className="text-white decoration-none text-lg sm:text-3xl"><IoLogoLinkedin /></a>
-                    <a href="https://www.linkedin.com/company/outcess/" target="blank" className="text-white decoration-none text-lg sm:text-3xl"><FaFacebook /></a>
+                    <a href="https://www.instagram.com/outcess.us?igsh=emxjanNpN2p5YW1i" target="blank" className="text-white decoration-none text-lg sm:text-3xl"><RiInstagramFill /></a>
+                    <a href="https://www.linkedin.com/company/outcess-us/" target="blank"  className="text-white decoration-none text-lg sm:text-3xl"><IoLogoLinkedin /></a>
                 </div>
             </div>
         </div>
