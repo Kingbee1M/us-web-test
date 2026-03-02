@@ -130,6 +130,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
+              aria-label="submit"
               className='w-[90%] sm:w-[70%] text-center bg-primary-orange hover:bg-hover-orange text-white py-2 px-4 text-base md:text-sm md:px-2 md:py-3 rounded-md'
             >
               Send Message

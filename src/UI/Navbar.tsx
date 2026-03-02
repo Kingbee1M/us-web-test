@@ -15,8 +15,8 @@ export default function Navbar () {
   const USlinks: linksTypes = {
     'Services': '/services',
     'Industries': '/industries',
-    'About Us': '/about Us',
-    'Contact US': '/contact Us',
+    'About Us': '/about-Us',
+    'Contact US': '/contact-Us',
   }
 
   const lastScrollY = useRef(0);
@@ -44,34 +44,14 @@ export default function Navbar () {
 
   return (
 
-      <div className={`${isVisible? ' h-60 transition-all duration-500 ease-in-out' : 'h-12.5'} xl:h-auto overflow-hidden w-screen sm:w-full fixed left-0 flex flex-col py-3 sm:px-16 px-2 bg-[#f5f3f4] z-70 transition-all duration-300 ease-in-out
-      ${hidden ? "-top-24" : "top-0"}
-    `}>
 
-      {/* main interface for desktop View  */}
-      <div className="w-full flex justify-between items-center ">
+
+      <header className={`${isVisible? ' h-64 transition-all duration-500 ease-in-out' : 'h-12.5'} xl:h-auto overflow-hidden w-screen sm:w-full fixed left-0 flex flex-col items-start xl:flex-row xl:items-center xl:justify-between gap-3 py-3 sm:px-16 px-2 bg-[#f5f3f4] z-70 transition-all duration-300 ease-in-out ${hidden ? "-top-24" : "top-0"}`}>
+        
+        <div className="w-full xl:w-auto flex flex-row justify-between">
         <NavLink to={'/'}><img src={logo} className="w-36 contain" alt="logo" /></NavLink>
 
-        <div className={`w-[30%] justify-between items-center hidden flex-col xl:flex xl:flex-row`}>
-        {Object.keys(USlinks).map((key) => (
-          <NavLink
-            key={key}
-            to={USlinks[key]}
-            className={({ isActive }) =>
-              `text-base font-medium transition-colors ${
-                isActive
-                  ? "text-primary-orange underline decoration-primary-orange"
-                  : "hover:text-primary-orange"
-              }`
-            }
-          >
-            {key}
-          </NavLink>
-          ))}
-        </div>
-
-
-        <div 
+        <button 
         onClick={() => setIsVisible(!isVisible)}
         className={`
           text-2xl xl:hidden inline-block
@@ -80,30 +60,35 @@ export default function Navbar () {
         `}
         >
           {isVisible ? <IoClose /> : <GiHamburgerMenu />}
+        </button>
         </div>
-        <Button variant="primary" className="xl:inline hidden sm:hidden">Get started</Button>
-      </div>
 
-          {/* only applies in mobile view */}
-        <div className="w-[50%] pl-12 justify-between items-start flex xl:hidden flex-col gap-2 xl:flex-row mt-2">
+
+        <div className="flex flex-col gap-3 xl:flex-row xl:justify-between w-full xl:w-2/3">
+          <nav className={`w-full xl:w-1/2 flex flex-col justify-between items-start gap-3 xl:items-center xl:flex-row`}>
           {Object.keys(USlinks).map((key) => (
             <NavLink
-            key={key}
-            to={USlinks[key]}
-            className={({ isActive }) =>
-              `text-base font-medium transition-colors ${
-                isActive
-                  ? "text-primary-orange underline decoration-primary-orange"
-                  : "hover:text-primary-orange"
-              }`
-            }
-          >
-            {key}
-          </NavLink>
-          ))}
-          <Button variant="primary" className="text-center md:p-3">Get started</Button>
+              key={key}
+              to={USlinks[key]}
+              className={({ isActive }) =>
+                `text-base font-medium transition-colors ${
+                  isActive
+                    ? "text-primary-orange underline decoration-primary-orange"
+                    : "hover:text-primary-orange"
+                }`
+              }
+            >
+              {key}
+            </NavLink>
+            ))}
+          </nav>
+
+
+          
+          <Button variant="primary" className="w-1/2 xl:w-1/5">Get started</Button>
         </div>
-      </div>
+      </header>
+
     
     );
 }

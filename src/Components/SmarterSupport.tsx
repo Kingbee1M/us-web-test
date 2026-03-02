@@ -19,9 +19,9 @@ const SmarterSupport = () => {
             {title: 'Industry-Specific Outsourcing', desc: ['Tailored CX & BPO for Ecommerce, Fintech, HealthTech, Telecom, Travel, and more.', 'Trained teams with domain knowledge.', 'Compliance-ready operations.', 'Flexible scaling for peak seasons.'], pic: img3, color: '#4caf5030'},
         ]
     return (
-        <div className="w-full flex flex-col items-center mt-32 bg-white text-text-color gap-3">
+        <section className="w-full flex flex-col items-center mt-32 bg-white text-text-color gap-3">
             
-            <motion.div
+            <motion.header
             ref={ref}
             initial={ {y: -220, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -30,7 +30,7 @@ const SmarterSupport = () => {
             >
                 <h2 className="text-blue-shade text-2xl sm:text-3xl lg:text-4xl font-garamond">Smarter Support. Better Outcomes.</h2>
                 <p className="font-montserrat w-[47%] text-center text-sm">Our solutions improve customer experience, streamline operations, and reduce cost powered by AI, delivered by experienced people</p>
-            </motion.div>
+            </motion.header>
             
             
             <motion.div
@@ -40,7 +40,7 @@ const SmarterSupport = () => {
             transition={{duration: 1.2, ease: 'easeOut', delay: 0.2}}
             className='flex flex-row flex-wrap justify-center items-start gap-6 w-4/5 mt-16 mb-24'>
                 {options.map((option, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center gap-8 w-[300px] h-[400px] rounded-lg" style={{border: `3px solid ${option.color}`}}>
+                    <div key={index} className="flex flex-col items-center justify-center gap-8 w-75 h-100 rounded-lg" style={{border: `3px solid ${option.color}`}}>
                             <img src={option.pic} alt={option.title} className="w-12 h-12" />
                         <div className="flex flex-col justify-center items-center w-full">
                             <h3 className="text-[18] font-demibold text-center">{option.title}</h3>
@@ -55,7 +55,7 @@ const SmarterSupport = () => {
             </motion.div>
 
                 <Button variant='primary' showArrow={true}>Explore all services</Button>
-        </div>
+        </section>
     )
 }
 

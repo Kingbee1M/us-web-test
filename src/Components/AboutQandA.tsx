@@ -4,7 +4,7 @@ import img from '../assets/svg/purplewave.svg'
 
 
 const AboutQandA  = () => {
-    const [openId, setOpenId] = useState<number | null>(null)
+    const [openIds, setOpenIds] = useState<number[]>([1,2,3,4]);
     const QAs = [
         {id: 1, Q: 'Human + AI Synergy', A: 'We leverage intelligent tools from real-time speech sentiment analysis to predictive analytics alongside emotionally intelligent teams that understand the nuances of human interaction.'},
         {id: 2, Q: 'Global Expertise, Local Heart', A: 'With U.S. leadership and African delivery centers, we offer the perfect balance of onshore credibility and offshore efficiency, delivering results without compromise.'},
@@ -13,19 +13,23 @@ const AboutQandA  = () => {
     ]
 
     const toggle = (id: number) => {
-       setOpenId(prev => prev === id ? null : id!)
-    }
+        setOpenIds(prev => 
+            prev.includes(id)
+                ? prev.filter(openId => openId !== id) // remove if already open
+                : [...prev, id] // add if not open
+        );
+    };
     return (
-        <div className="bg-[#FFFBF8] w-full flex flex-col items-center py-32 gap-7 relative">
+        <section className="bg-[#FFFBF8] w-full flex flex-col items-center py-12 md:pb-16 lg:pb-24 gap-7 relative">
             <h2 className="font-garamond font-bold text-3xl md:text-5xl text-heading-color">How We Deliver</h2>
             <p className="text-sm sm:text-base w-[90%] sm:w-4/5 lg:w-2/5 text-text-color font-montserrat text-center">Combining deep expertise with collaborative innovation to deliver solutions that truly meet your needs</p>
 
             <div className="flex flex-col gap-3 w-[70%]">
                 {QAs.map((qa) => (
-                    <div key={qa.id} className={`border-2 border-solid border-[#F7B081] w-full p-3 flex justify-between items-start rounded-lg ${openId === qa.id && 'bg-[#FDE0CD]'}`}>
+                    <div key={qa.id} className={`border-2 border-solid border-[#F7B081] w-full p-3 flex justify-between items-start rounded-lg ${openIds.includes(qa.id) && 'bg-[#FDE0CD]'}`}>
                         <div >
                             <h3 className="font-semibold font-montserrat mb-2">{qa.id}. {qa.Q}</h3>
-                            {openId === qa.id && (
+                            {openIds.includes(qa.id) && (
                                 <p className="font-montserrat">{qa.A}</p>
                             )}
                         </div>
@@ -34,14 +38,14 @@ const AboutQandA  = () => {
                         onClick={() => toggle(qa.id)}
                         className={`text-2xl cursor-pointer`}
                         >
-                        {openId === qa.id ? <RiSubtractLine/> : <RiAddLine/>}
+                    {openIds.includes(qa.id) ? <RiSubtractLine/> : <RiAddLine/>}
                         </div>
 
                     </div>
                 ))}
             </div>
             <img src={img} alt="wave" className='w-full absolute bottom-0' />
-        </div>
+        </section>
     )
 }
 

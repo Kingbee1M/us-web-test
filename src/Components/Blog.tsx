@@ -27,7 +27,7 @@ const Blog = () => {
     }
 
     return (
-        <div className="bg-bot-comp-bg w-full h-auto flex flex-col items-center mt-28 pb-32 relative py-10">
+        <article className="bg-bot-comp-bg w-full h-auto flex flex-col items-center mt-28 pb-32 relative py-10">
             <img src={wave} alt='wave' className='w-full absolute bottom-0' />
             <h2 className="font-garamond text-4xl mb-3">Blogs & News</h2>
             <p className="w-4/5 lg:w-auto font-montserrat text-[#060606] text-center text-sm lg:text-base lg:text-left">Stay informed with the latest insights, trends, and best practices in customer experience and outsourcing.</p>
@@ -55,7 +55,7 @@ const Blog = () => {
                 <p className='w-4/5 lg:w-auto font-montserrat text-text-color text-sm lg:text-base text-center'>Partner with Outcess US to create intelligent, human-centered, and cost-efficient customer experiences.</p>
                 <Button variant='primary' showArrow={true} >Build My CX Advantage</Button>
             </div>
-        </div>
+        </article>
     )
 }
 

@@ -25,24 +25,24 @@ const Experience = () => {
         {title: 'Precision Targeting', desc: "Every interaction tailored to individual customer needs", pic: img4, color: '#00bcd414'},
     ]
     return (
-        <div className="flex flex-col items-center w-full bg-white relative">
+        <section className="flex flex-col items-center w-full bg-white relative">
             <img src={img5} className="w-full" alt="wavyup"/>
 
 
             <div className='bg-pink flex flex-col items-center py-32 font-montserrat'>
                 
-                <motion.div ref={ref} initial={ {y: -220, opacity: 0 }}
+                <motion.header ref={ref} initial={ {y: -220, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : {}}
                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
                 className="full flex flex-col items-center gap-8 mb-">
-                    <h2 className='w-2/3 lg:w-auto text-center font-bold font-garamond text-[#222222] text-2xl lg:text-4xl'>Experience Designed With Insight + Emphaty</h2>
+                    <h2 className='w-2/3 lg:w-auto text-center font-bold font-garamond text-heading-color text-2xl lg:text-4xl'>Experience Designed With Insight + Emphaty</h2>
                     <p className='text-center text-text-color text-sm lg:text-base'>
                         We don&apos;t just manage tasks we manage relationships.<br />
                         Our agents are trained to read tone, understand emotion, and respond with clarity. AI tools provide real-time<br />
                         guidance, helping them resolve issues faster and with a human touch.
                         Every interaction becomes an opportunity to retain a customer.<br />
                     </p>
-                </motion.div>
+                </motion.header>
 
                 <div className='flex flex-wrap justify-center lg:justify-end items-center w-[90%] lg:w-[70%] gap-y-6 mt-16 ml-0 lg:ml-24'>
                     {infos.map((info, index) => {
@@ -65,7 +65,7 @@ const Experience = () => {
                                 delay: index * 0.1,
                                 ease: "easeOut"
                                 }}
-                                className='w-[300px] lg:w-2/4 flex items-center gap-3'
+                                className='w-75 lg:w-2/4 flex items-center gap-3'
                             >
                             <div className='w-20 lg:w-12 h-12 lg:h-12 rounded-lg flex justify-center items-center flex-none' style={{backgroundColor:info.color}}> 
                                 <img src={info.pic} alt={info.title} className="w-7 lg:w-6" />
@@ -90,7 +90,7 @@ const Experience = () => {
 
 
             <img src={img6} className="w-full absolute bottom-0" alt="wavydown"/>
-        </div>
+        </section>
     )
 }
 

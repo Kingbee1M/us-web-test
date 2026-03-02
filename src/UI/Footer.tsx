@@ -11,13 +11,13 @@ type NavLinks = Record<string, Record<string, string>>;
 
 const FooterUS = () => {
     const links: NavLinks = {
-        'Company': {'About Us': '/us/about Us','services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
-        'Support': {'Contact Us': '/us/contact Us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
+        'Company': {'About Us': '/us/about-Us','services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
+        'Support': {'Contact Us': '/us/contact-Us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
     }
 
-    const infos = ['Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', 'info@outcess.com', '02013300308']
+    const infos = ['Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', 'info@outcess.com', '(201) 330-0308']
     return (
-        <div className="w-full flex flex-col justify-center items-center bg-[#f7f7f7]">
+        <footer className="w-full flex flex-col justify-center items-center bg-[#f7f7f7]">
             <div className="w-[90%] flex justify-evenly items-start gap-4 mt-16 bg-[#f7f7f7] pb-5">
                 <img src={logo} alt="logo" className="w-1/5"/>
                 
@@ -61,14 +61,14 @@ const FooterUS = () => {
                 </div>
             </div>
 
-            <div className="w-full flex justify-between items-center, xs:pl-5 py-16 xs:pr-24 sm:px-24 bg-[#F04217] text-white">
-                <p>© 2025 Outcess. All rights reserved.</p>
+            <div className="w-full flex justify-between items-center, xs:pl-5 py-16 xs:pr-24 sm:px-24 bg-primary-orange text-white">
+                <p>© 2026 Outcess. All rights reserved.</p>
                 <div className="flex items-center gap-3 text-white">
-                    <a href="https://www.instagram.com/outcess.us?igsh=emxjanNpN2p5YW1i" target="blank" className="text-white decoration-none text-lg sm:text-3xl"><RiInstagramFill /></a>
-                    <a href="https://www.linkedin.com/company/outcess-us/" target="blank"  className="text-white decoration-none text-lg sm:text-3xl"><IoLogoLinkedin /></a>
+                    <a href="https://www.instagram.com/outcess.us?igsh=emxjanNpN2p5YW1i" target="blank"  rel="noopener noreferrer" aria-label="Follow us on Instagram" className="text-white decoration-none text-lg sm:text-3xl"><RiInstagramFill /></a>
+                    <a href="https://www.linkedin.com/company/outcess-us/" target="blank"  rel="noopener noreferrer" aria-label="Follow us on LinkedIn" className="text-white decoration-none text-lg sm:text-3xl"><IoLogoLinkedin /></a>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

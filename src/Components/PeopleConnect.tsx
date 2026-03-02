@@ -23,11 +23,11 @@ const PeopleConnect = () => {
         {title: '24/7 global delivery', desc: "Across multiple time zones", pic: img5, color: '#DDE4F0'},
     ]
     return (
-        <div className="w-full relative flex flex-col justify-center items-center text-text-color bg-bot-comp-bg overflow-x-hidden">
+        <section className="w-full relative flex flex-col justify-center items-center text-text-color bg-bot-comp-bg overflow-x-hidden">
             {/* <div className=" w-full h-[250px] bg-red-500 -top-[20%] left-0 z-[200] absolute rounded-[50%_50%_0_0]"></div> */}
             <div className="w-full z-50 bg-bot-comp-bg flex flex-col items-center mb-28">
                 
-                <motion.div
+                <motion.header
                 ref={ref}
                 initial={{ y: -120, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -48,7 +48,7 @@ const PeopleConnect = () => {
                         </textPath>
                         </text>
                     </svg>
-                </motion.div>
+                </motion.header>
 
                 <motion.div
                 ref={ref}
@@ -82,7 +82,7 @@ const PeopleConnect = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 

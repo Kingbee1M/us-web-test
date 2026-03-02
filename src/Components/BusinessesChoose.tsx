@@ -10,7 +10,7 @@ const BusinessesChoose = () => {
         {id: 4,title: 'Outcome-driven', desc: 'Every solution designed to deliver measurable business impact.', bg: '#dde4f0', border: '#8db3f4'},
     ]
     return (
-        <div className="w-full bg-white flex flex-col items-center py-36 gap-6">
+        <section className="w-full bg-white flex flex-col items-center py-36 gap-6">
             <h2 className="text-center w-1/2 text-2xl lg:text-5xl font-garamond font-bold">Why businesses choose us</h2>
             <p className="text-center w-4/5 md:w-4/5 md:text-base lg:w-1/2 text-sm lg:text-xl font-montserrat">Built to elevate performance, reduce costs, and deliver the outcomes your business cares about most.</p>
             <div className="flex flex-wrap justify-center w-[90%] sm:w-4/5 md:w-[70%] xl:w-1/2 gap-4">
@@ -31,7 +31,7 @@ const BusinessesChoose = () => {
                     </motion.div>
                 )})}
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -30,8 +30,8 @@ const LandingHero = () => {
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute top-[17%] right-[2%]"></div>
             <div className="bg-white/30 backdrop-blur-md w-full h-300 absolute z-20"></div>
 
-            <div className="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center pb-16 z-30 mb-24">
-                <motion.div
+            <section className="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center pb-16 z-30 mb-24">
+                <motion.header
                 initial={{ x: -120, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -68,7 +68,7 @@ const LandingHero = () => {
                         <Button variant="primary" showArrow={true} className="text-[10px] p-2 lg:text-xs" >Partner With Us</Button>
                         <Button variant="border" showArrow={true} className="text-[10px] p-2 lg:text-xs" >Explore Our Solutions</Button>
                     </div>
-                </motion.div>
+                </motion.header>
                 
                 <motion.div
                 initial={{ x: 120, opacity: 0 }}
@@ -78,7 +78,7 @@ const LandingHero = () => {
                 >
                     <VideoPlayer src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view'} width={500} />
                 </motion.div>
-            </div>
+            </section>
 
        </div> 
     )

@@ -22,7 +22,7 @@ const WhyPartner = () => {
         }
     };
     return (
-        <div className="w-full flex flex-col items-center gap-4">
+        <section className="w-full flex flex-col items-center gap-4">
             <h2 className="text-4xl font-bold text-center font-garamond">Why Partner with Outcess US?</h2>
             <p className="text-base sm:text-xl font-montserrat text-center text-2/3 w-[96%] lg:w-[55%] ">
             Built to elevate performance, reduce costs, and deliver the outcomes your business cares about most.
@@ -58,7 +58,7 @@ const WhyPartner = () => {
             </div>
 
             <Button variant="primary" className="my-16">Work with Us</Button>
-        </div>
+        </section>
 
     )
 }

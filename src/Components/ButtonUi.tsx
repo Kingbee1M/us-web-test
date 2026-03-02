@@ -69,6 +69,7 @@ const Button = ({
 
   return (
     <button
+      aria-label="navigate and scroll to the contact form"
       type={type}
       onClick={handleClick}
       disabled={disabled}

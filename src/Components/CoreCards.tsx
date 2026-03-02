@@ -37,7 +37,6 @@ const CoreCards = ({ core }: CoreCardsProps) => {
                 <div className=" relative z-10 w-full h-full rounded-lg border-2 border-[#aa96da] overflow-hidden bg-white">
                     <div className='w-full h-full text-xl flex flex-col gap-3 z-30 p-3 pb-5 relative rounded-lg border-2 border-solid border-[#aa96da] hover:bg-pink'>
                         <h2 className='font-garamond text-heading-color text-3xl'>{core.title}</h2>
-                        <p className='font-montserrat text-heading-color font-demibold italic leading-loose text-xl'>{core.subtitle}</p>
                         <p className='font-montserrat text-text-color leading-loose text-xl'>{core.desc}</p>
                         <div>
                             <h3 className='font-montserrat text-heading-color w-full font-demibold text-xl'>What We Offer:</h3>
@@ -47,7 +46,7 @@ const CoreCards = ({ core }: CoreCardsProps) => {
                                 ))}
                                 </ul>
                         </div>
-                        <h3 className=' text-xl font-semibold font-montserrat'>Impact: <span className='font-montserrat text-text-color leading-loose text-xl font-normal'>{core.impacts}</span></h3>
+                        <h3 className=' text-xl font-semibold font-montserrat'>Result: <span className='font-montserrat text-text-color leading-loose text-xl font-normal'>{core.impacts}</span></h3>
                     </div>
                 </div>
             </motion.div>
@@ -68,7 +67,6 @@ const CoreCards = ({ core }: CoreCardsProps) => {
                     <div className=" relative z-10 w-full h-full rounded-lg border-2 border-[#aa96da] overflow-hidden bg-white">
                         <div className='w-full h-full flex flex-col gap-3 z-30 p-3 pb-5 relative rounded-lg border-2 border-solid border-[#aa96da] hover:bg-pink'>
                         <h2 className='font-garamond text-heading-color text-2xl'>{core.title}</h2>
-                        <p className='font-montserrat text-heading-color font-demibold italic xl leading-loose text-xl' >{core.subtitle}</p>
                         <p className='font-montserrat text-text-color leading-loose text-xl'>{core.desc}</p>
                         <div>
                             <h3 className='font-montserrat text-heading-color text-xl font-semibold'>Industries We Serve</h3>

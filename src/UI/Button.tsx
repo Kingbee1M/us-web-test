@@ -30,9 +30,8 @@ const Button = ({
   const navigate = useNavigate();
 
   const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
-    console.log("Navigating to contact page");
 
-    navigate("contact Us", {
+    navigate("/contact-Us", {
       state: { scrollTo: "contact-form" },
     });
   };
@@ -41,7 +40,7 @@ const Button = ({
 
 
   const baseClasses =
-    "w-auto rounded transition-colors duration-200 focus:outline-none flex items-center gap-0.5 cursor-pointer";
+    " rounded transition-colors duration-200 focus:outline-none flex items-center gap-0.5 cursor-pointer";
 
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-[#ff6600] hover:bg-hover-orange text-white",
