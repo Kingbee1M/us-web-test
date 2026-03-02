@@ -88,7 +88,7 @@ const ContactForm = () => {
         {() => (
           <Form className="w-[90%] lg:w-3/5 my-28 pl-10 flex justify-center flex-col gap-4">
             <h1 className="text-4xl text-heading-color font-garamond font-bold">
-              Contact us
+              Contact Us
             </h1>
 
             <p className="text-lg font-montserrat text-text-color">

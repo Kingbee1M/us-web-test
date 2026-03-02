@@ -8,7 +8,7 @@ const WhyPartner = () => {
     {title: 'Compliance Ready', desc: 'Regulation-aligned processes you can trust'},
     {title: 'Mutilingual Support', desc: 'Reach divers customer base globally'},
     {title: 'Proven Track Record', desc: 'Success across healthcare, fintech, e-commerce & more'},
-    {title: 'Talored Solutions', desc: 'Custom Outsourcing designed for you market'},
+    {title: 'Tailored Solutions', desc: 'Custom Outsourcing designed for you market'},
   ];
 
   const [index, setIndex] = useState(0);

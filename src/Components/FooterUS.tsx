@@ -7,8 +7,8 @@ import { IoLogoLinkedin } from "react-icons/io5";
 
 const FooterUS = () => {
     const links: { [key: string]: { [key: string]: string } } = {
-        'Company': {'About us': '/us/about Us','services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
-        'Support': {'Contact Us': '/us/contact us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
+        'Company': {'About Us': '/us/about Us','Services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
+        'Support': {'Contact Us': '/us/contact Us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
     }
 
     const infos = ['Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', 'info@outcess.com', '02013300308']

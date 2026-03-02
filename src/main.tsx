@@ -21,11 +21,11 @@ const router = createBrowserRouter([
     element: <App />, 
   },
   {
-    path: "/about us",
+    path: "/about Us",
     element: <USAboutUs />,
   },
   {
-    path: "/contact us",
+    path: "/contact Us",
     element: <USAContactus />,
   },
   {

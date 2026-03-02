@@ -32,7 +32,7 @@ const Button = ({
   const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
     console.log("Navigating to contact page");
 
-    navigate("/contact us", {
+    navigate("contact Us", {
       state: { scrollTo: "contact-form" },
     });
   };

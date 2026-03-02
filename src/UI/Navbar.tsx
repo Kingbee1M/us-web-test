@@ -16,7 +16,7 @@ export default function Navbar () {
     'Services': '/services',
     'Industries': '/industries',
     'About Us': '/about Us',
-    'Contact US': '/contact us',
+    'Contact US': '/contact Us',
   }
 
   const lastScrollY = useRef(0);
