@@ -35,10 +35,10 @@ const Experience = () => {
                 animate={isInView ? { y: 0, opacity: 1 } : {}}
                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
                 className="full flex flex-col items-center gap-8 mb-">
-                    <h2 className='w-2/3 lg:w-auto text-center font-bold font-garamond text-heading-color text-2xl lg:text-4xl'>Experience Designed With Insight + Emphaty</h2>
+                    <h2 className='w-2/3 lg:w-auto text-center font-bold font-garamond text-heading-color text-2xl lg:text-4xl'>Experience Designed With Insight + Empathy</h2>
                     <p className='text-center text-text-color text-sm lg:text-base'>
-                        We don&apos;t just manage tasks we manage relationships.<br />
-                        Our agents are trained to read tone, understand emotion, and respond with clarity. AI tools provide real-time<br />
+                        We don&apos;t just manage tasks, we manage relationships.<br />
+                        Our agents are trained to read tone, understand emotion, and respond with clarity. AI tools provide real-time <br />
                         guidance, helping them resolve issues faster and with a human touch.
                         Every interaction becomes an opportunity to retain a customer.<br />
                     </p>

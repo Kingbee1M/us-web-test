@@ -11,7 +11,7 @@ const Blog = () => {
 
     //will change to api data later
     const blogPosts = [
-        {img: img1, date: '25/10/2026', title: 'Making US Health-Care Easier ', desc: (<>It&apos;s no news that the US health-care has had lots of complaints in the past years due to slow response or no response at all…</>), link: 'https://docs.google.com/document/d/1PVxDaBr4j9zc-ak0_xt32JqbnQ20o256d6THgOI8dWM/edit?usp=drivesdk'},
+        {img: img1, date: '25/10/2026', title: 'Making US Healthcare Easier ', desc: (<>It&apos;s no news that the US healthcare has had lots of complaints in the past years due to slow response or no response at all…</>), link: 'https://docs.google.com/document/d/1PVxDaBr4j9zc-ak0_xt32JqbnQ20o256d6THgOI8dWM/edit?usp=drivesdk'},
         {img: img2, date: '25/10/2026', title: 'Evaluating Cloud Solutions for Business Optimization ', desc: 'Cloud solutions let you run apps, store data, and scale services over the internet instead of expensive local servers. For US brands, that means faster launches, easier collaboration, and the ability to scale up during busy moments — all without building and managing a physical data center.', link: 'https://docs.google.com/document/d/1XYZkbyPEpZggLzSZi38_13xf7qAoGJC7NNEysvdPn1M/edit?usp=drivesdk'},
         {img: img3, date: '25/10/2026', title: 'The Ultimate Customer Leverage: Give Them Control', desc: (<>Think about the last time you ignored a call, deleted a marketing email, or abandoned a checkout because the process was long. Customers do the same — and fast. Today&apos;s consumers expect to be reached on their terms: the channel they prefer, at the moment they&apos;re ready, with an experience that doesn&apos;t waste their time.</>), link: 'https://docs.google.com/document/d/1Z_gvn0BZICcA3H1Zi-y8uKkfqDu365DHIby5nXS8qbA/edit?usp=drivesdk'},
     ]
@@ -53,7 +53,7 @@ const Blog = () => {
             <div className='mt-44 w-full flex flex-col items-center gap-4 '>
                 <h2 className="font-garamond text-center text-2xl lg:text-4xl">Let&apos;s Build a Smarter Customer Experience</h2>
                 <p className='w-4/5 lg:w-auto font-montserrat text-text-color text-sm lg:text-base text-center'>Partner with Outcess US to create intelligent, human-centered, and cost-efficient customer experiences.</p>
-                <Button variant='primary' showArrow={true} >Build My CX Advantage</Button>
+                <Button variant='primary' showArrow={true} >Let&apos;s Build Your CX Advantage</Button>
             </div>
         </article>
     )

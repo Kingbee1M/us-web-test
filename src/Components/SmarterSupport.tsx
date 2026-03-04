@@ -54,7 +54,7 @@ const SmarterSupport = () => {
                 ))}
             </motion.div>
 
-                <Button variant='primary' showArrow={true}>Explore all services</Button>
+                <Button variant='primary' showArrow={true}>Explore All Services</Button>
         </section>
     )
 }

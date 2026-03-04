@@ -16,7 +16,7 @@ export default function Navbar () {
     'Services': '/services',
     'Industries': '/industries',
     'About Us': '/about-Us',
-    'Contact US': '/contact-Us',
+    'Contact Us': '/contact-Us',
   }
 
   const lastScrollY = useRef(0);
@@ -85,7 +85,7 @@ export default function Navbar () {
 
 
           
-          <Button variant="primary" className="w-1/2 xl:w-1/5">Get started</Button>
+          <Button variant="primary" className="w-1/2 xl:w-1/5">Get Started</Button>
         </div>
       </header>
 

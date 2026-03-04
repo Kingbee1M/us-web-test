@@ -8,7 +8,7 @@ const IndustriesHeader = () => {
             Wherever your customers are, we help you reach them — with empathy, intelligence, and<br/>
              excellence at scale</p>
 
-            <Button variant="primary">Work with Us</Button>
+            <Button variant="primary">Work With Us</Button>
         </header>
     )
 }

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const LandingHero = () => {
     const phrases = [
-        "Perfected by Emotion",
+        "Perfected by Emotion.",
         "Shaped by Humans.",
         "Elevating Experiences.",
         "Crafted for Connection.",

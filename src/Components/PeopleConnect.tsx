@@ -58,9 +58,9 @@ const PeopleConnect = () => {
                 className="w-full flex flex-col items-center mt-6"
                 >
                     <p className="w-2/3 text-sm lg:text-[16px] text-text-color font-demibold text-center mb-10 font-montserrat leading-6">Automation speeds things up. Empathy makes customers stay.<br />
-                    Outcess US blends intelligent automation with emotionally trained support teams to create<br /> 
+                    Outcess US blends intelligent automation with emotionally trained support teams to create <br /> 
                     customer interactions that are accurate, responsive, and genuinely human.<br />
-                    We utilize AI, analytics, and in-depth industry expertise to help brands understand their<br /> 
+                    We utilize AI, analytics, and in-depth industry expertise to help brands understand their <br /> 
                     customers and deliver faster resolutions at lower operational costs.
                     </p>
 

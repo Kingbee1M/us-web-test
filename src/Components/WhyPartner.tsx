@@ -7,7 +7,7 @@ const WhyPartner = () => {
     {title: 'Industry Expertise', desc: 'Deep understanding of industry specific challenges'},
     {title: 'Compliance Ready', desc: 'Regulation-aligned processes you can trust'},
     {title: 'Mutilingual Support', desc: 'Reach divers customer base globally'},
-    {title: 'Proven Track Record', desc: 'Success across healthcare, fintech, e-commerce & more'},
+    {title: 'Proven Track Record', desc: 'Success across healthcare, fintech, E-Commerce & more'},
     {title: 'Tailored Solutions', desc: 'Custom Outsourcing designed for you market'},
   ];
 
@@ -57,7 +57,7 @@ const WhyPartner = () => {
             </div>
             </div>
 
-            <Button variant="primary" className="my-16">Work with Us</Button>
+            <Button variant="primary" className="my-16">Work With Us</Button>
         </section>
 
     )

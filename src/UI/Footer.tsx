@@ -11,7 +11,7 @@ type NavLinks = Record<string, Record<string, string>>;
 
 const FooterUS = () => {
     const links: NavLinks = {
-        'Company': {'About Us': '/us/about-Us','services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
+        'Company': {'About Us': '/us/about-Us','Services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
         'Support': {'Contact Us': '/us/contact-Us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
     }
 
