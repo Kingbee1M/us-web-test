@@ -13,7 +13,7 @@ const ItMatters = () => {
             {title: '4,000+', desc: "Contact center seats deployed globally", pic: (<><RxLightningBolt /></>), color: '#FFF5CF'},
             {title: '3000+', desc: "CRM seats implemented for enterprise clients", pic: (<><CiChat1 /></>), color: '#FFF5CF'},
             {title: '24/7', desc: "Scalable support across multiple industries", pic: (<><GoClock /></>), color: '#DDE4F0'},
-            {title: 'US-based', desc: "Operations in the U.S.", pic: (<><TbWorld /></>), color: '#F3E5F5'},
+            {title: 'US-based', desc: "Operations in the US.", pic: (<><TbWorld /></>), color: '#F3E5F5'},
         ]
     return (
         <section className="flex flex-col items-center w-full py-20 gap-8 bg-[#FEF2EA] relative">

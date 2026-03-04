@@ -7,7 +7,7 @@ const AboutQandA  = () => {
     const [openIds, setOpenIds] = useState<number[]>([1,2,3,4]);
     const QAs = [
         {id: 1, Q: 'Human + AI Synergy', A: 'We leverage intelligent tools from real-time speech sentiment analysis to predictive analytics alongside emotionally intelligent teams that understand the nuances of human interaction.'},
-        {id: 2, Q: 'Global Expertise, Local Heart', A: 'With U.S. leadership and African delivery centers, we offer the perfect balance of onshore credibility and offshore efficiency, delivering results without compromise.'},
+        {id: 2, Q: 'Global Expertise, Local Heart', A: 'With US leadership and African delivery centers, we offer the perfect balance of onshore credibility and offshore efficiency, delivering results without compromise.'},
         {id: 3, Q: 'Scalable & Flexible Models', A: ( <>Whether you&apos;re a growing startup or a global enterprise, our outsourcing solutions adapt seamlessly to your operational needs, timelines, and growth goals.</>)},
         {id: 4, Q: 'Continuous Innovation', A: 'We are relentless in our pursuit of better, continuously refining processes, training programs, and technologies that elevate service delivery and strengthen customer loyalty.'},
     ]

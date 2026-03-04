@@ -5,7 +5,7 @@ const ContactHeader = () => {
             <p className="flex flex-col items-center w-[80%] sm:w-[90%] md:w-4/5 lg:w-2/3 text-center font-montserrat text-text-color text-base sm:text-sm md:text-base mb-6">We&apos;re ready to help you transform your business through the power of<br/>
              intelligent, human-centered outsourcing.Whether you&apos;re looking to scale<br/>
              operations, enhance customer experience, or explore new growth<br/>
-              opportunities in the U.S. our team is here to listen and guide you every step<br/>
+              opportunities in the US our team is here to listen and guide you every step<br/>
               of the way.
             </p>
         </header>

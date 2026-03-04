@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
     const heroData =[
         "At Outcess US, we believe the most powerful connections in business are built at the intersection of technology and empathy. We are a customer experience and business process outsourcing (BPO) company helping brands grow through intelligent, emotionally attuned interactions. By combining AI automation, data-driven insights, and human understanding, we empower organizations to create meaningful relationships with their customers — at scale.",
-        "With over 19 years of global outsourcing experience, Outcess has evolved from its African roots into a global player with a U.S. presence and delivery centers across Africa. Our mission is simple: to help brands scale smarter, connect deeper, and operate more efficiently through intelligent outsourcing."
+        "With over 19 years of global outsourcing experience, Outcess has evolved from its African roots into a global player with a US presence and delivery centers across Africa. Our mission is simple: to help brands scale smarter, connect deeper, and operate more efficiently through intelligent outsourcing."
     ]
 
 const AboutHeader = () => {

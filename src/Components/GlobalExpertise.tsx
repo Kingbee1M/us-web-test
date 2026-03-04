@@ -22,7 +22,7 @@ const GlobalExpertise = () => {
         {icon : img3, title: '24/7 multilingual support', id: 3},
         {icon : img4, title: 'Faster setup, flexible staffing, rapid scale', id: 4},
         {icon : img5, title: 'Onshore, nearshore, and offshore delivery models', id: 5},
-        {icon : img6, title: 'U.S. presence with a strong offshore cost advantage', id: 6}
+        {icon : img6, title: 'US presence with a strong offshore cost advantage', id: 6}
     ]
     return (
             <div className="bg-dark-blue pt-40 pb-28 w-full flex flex-col items-center relative overflow-clip">
