@@ -31,17 +31,16 @@ const GlobalExpertise = () => {
                 <h2 className="font-garamond italic text-2xl text-white">Global Expertise. Local Quality. Offshore Advantage.</h2>
                  <img src={img7} className="w-full absolute bottom-0" alt="wavydown"/>
 
-                 <div className='flex flex-wrap justify-between items-center w-[65%] gap-y-6 mt-6'>
+                 <div ref={ref} className='flex flex-wrap justify-between items-center w-[65%] gap-y-6 mt-6'>
                     {points.map((point) => {
                         const fromLeft = [1, 5,].includes(point.id);
                         const third = point.id === 3
-                        const forth = point.id === 4
+                        const fourth = point.id === 4
                         return (
                         <motion.div
-                        ref={ref}
                         key={point.title}
                         className='flex items-center w-100 bg-[#004bcc] py-3 pr-5 pl-3 gap-2 rounded-lg'
-                        initial={{ x: fromLeft ? -100 : third ? 180 : forth ? -200 : 100, y: third ? 100 : forth ?100 : 0, opacity: 0}}
+                        initial={{ x: fromLeft ? -100 : third ? 180 : fourth ? -200 : 100, y: third ? 100 : fourth ?100 : 0, opacity: 0}}
                         animate={isInView ? { x: 0, y: 0, opacity: 1} : {}}
                         viewport={{ once: true }}
                         transition={{

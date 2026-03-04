@@ -26,7 +26,7 @@ const ItMatters = () => {
             <div className="flex flex-row flex-wrap gap-12 w-4/5 justify-center mt-16">
                 {blocks.map((block, index) => (
                     <div key={index} className="flex flex-col items-center justify-center w-75 h-40 gap-2 rounded-xl border border-solid border-gray-500" >
-                        <div className={`w-12 h-12 rounded-xl flex justify-center items-center text-2xl bg-[#FEF2EA] text-text-color`}>
+                        <div className="w-12 h-12 rounded-xl flex justify-center items-center text-2xl text-text-color" style={{ backgroundColor: block.color }}>
                            {block.pic}
                         </div>
                         <div className="flex flex-col gap-1">

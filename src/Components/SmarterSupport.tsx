@@ -26,10 +26,10 @@ const SmarterSupport = () => {
             initial={ {y: -220, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-            className="full flex flex-col items-center gap-8"
+            className="w-full flex flex-col items-center gap-8"
             >
                 <h2 className="text-blue-shade text-2xl sm:text-3xl lg:text-4xl font-garamond">Smarter Support. Better Outcomes.</h2>
-                <p className="font-montserrat w-[47%] text-center text-sm">Our solutions improve customer experience, streamline operations, and reduce cost powered by AI, delivered by experienced people</p>
+                <p className="font-montserrat w-[47%] text-center text-sm">Our solutions improve customer experience, streamline operations, and reduce costs powered by AI, delivered by experienced people</p>
             </motion.header>
             
             
@@ -43,7 +43,7 @@ const SmarterSupport = () => {
                     <div key={index} className="flex flex-col items-center justify-center gap-8 w-75 h-100 rounded-lg" style={{border: `3px solid ${option.color}`}}>
                             <img src={option.pic} alt={option.title} className="w-12 h-12" />
                         <div className="flex flex-col justify-center items-center w-full">
-                            <h3 className="text-[18] font-demibold text-center">{option.title}</h3>
+                            <h3 className="text-[18px] font-semibold text-center">{option.title}</h3>
                             <ul className="list-disc pl-4 mt-2 flex flex-col w-4/5 gap-2">
                                 {option.desc.map((item, i) => (
                                     <li key={i} className="text-sm">{item}</li>

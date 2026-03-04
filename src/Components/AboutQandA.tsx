@@ -34,12 +34,14 @@ const AboutQandA  = () => {
                             )}
                         </div>
                         
-                       <div
+                       <button
+                        type="button"
+                        aria-label={openIds.includes(qa.id) ? `Collapse ${qa.Q}` : `Expand ${qa.Q}`}
                         onClick={() => toggle(qa.id)}
                         className={`text-2xl cursor-pointer`}
                         >
                     {openIds.includes(qa.id) ? <RiSubtractLine/> : <RiAddLine/>}
-                        </div>
+                        </button>
 
                     </div>
                 ))}
