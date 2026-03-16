@@ -12,8 +12,8 @@ const USDataPolicy = () => {
             </h1>
             <p>
               Outcess Data Protection and Privacy Policy is in line with the
-              laws set out in the NDPR (Nigeria Data Protection Regulation) and
-              covers the following areas in layman's terms:
+              applicable data protection and privacy laws and covers the
+              following areas in layman's terms:
             </p>
             <ol>
               <li>What data we have and why we have it.</li>
@@ -30,11 +30,11 @@ const USDataPolicy = () => {
                   <u>What data we have and why we have it.</u>
                 </p>
                 <p>
-                  Outcess Solutions Nigeria Limited needs to collect and use
-                  certain information about the people we meet to carry out our
-                  work and serve our clients to the best of our ability. This
-                  personal information is collected and dealt with as set out in
-                  the NDPR. The data we collect and store is:
+                  Outcess Solutions LLC needs to collect and use certain
+                  information about the people we meet to carry out our work and
+                  serve our clients to the best of our ability. This personal
+                  information is collected and handled in line with applicable
+                  data protection laws. The data we collect and store is:
                 </p>
                 <ul className="reasons-list">
                   <li>
@@ -53,12 +53,12 @@ const USDataPolicy = () => {
                   <u>Data Controller.</u>
                 </p>
                 <p>
-                  Outcess Solutions Nigeria Limited is the Data Controller under
-                  the NDPR, which means that it determines what purposes
-                  personal information held and will be used for. It is also
-                  responsible for notifying the Information Commissioner of the
-                  data it holds or is likely to hold, and the general purposes
-                  that this data will be used for.
+                  Outcess Solutions LLC is the Data Controller, which means that
+                  it determines the purposes for which personal information is
+                  held and used. It is also responsible for ensuring appropriate
+                  records of data processing activities are maintained and that
+                  personal information is used only for legitimate business and
+                  legal purposes.
                 </p>
               </li>
               <li className="reasons-hoghlight">
@@ -66,16 +66,12 @@ const USDataPolicy = () => {
                   <u>Disclosure.</u>
                 </p>
                 <p>
-                  Outcess Solutions Nigeria Limited does not share data with
-                  other agencies save for when required to do so under statute;
-                  e.g. HMRC and so on. Outcess Solutions Nigeria Limited intends
-                  to ensure that personal information is treated lawfully and
-                  correctly. To this end, Outcess Solutions Nigeria Limited will
-                  adhere to the Principles of Data Protection, as detailed in
-                  the NDPR which was issued on 25th January 2019 in pursuant to
-                  section 6 (a) and (c) of the National Information Technology
-                  Development Agency Act 2007 (the 'NITDA Act'). Specifically,
-                  the Principles require that personal information:
+                  Outcess Solutions LLC does not share data with other agencies
+                  except where required by law. Outcess Solutions LLC is
+                  committed to ensuring that personal information is treated
+                  lawfully and correctly. To this end, Outcess Solutions LLC
+                  adheres to core principles of data protection. Specifically,
+                  personal information:
                 </p>
                 <ul className="reasons-list-two">
                   <li>
@@ -107,11 +103,11 @@ const USDataPolicy = () => {
                   </li>
                   <li>
                     Shall not be transferred to a country or territory outside
-                    the Nigeria.
+                    approved legal data transfer mechanisms.
                   </li>
                 </ul>
                 <p>
-                  Outcess Solutions Nigeria Limited will, through appropriate
+                  Outcess Solutions LLC will, through appropriate
                   management and strict application of criteria and controls:
                 </p>
                 <ul className="reason-list-three">
@@ -180,12 +176,11 @@ const USDataPolicy = () => {
                   <li>And then gives their consent.</li>
                 </ul>
                 <p>
-                  Outcess Solutions Nigeria Limited will ensure that data is
+                  Outcess Solutions LLC will ensure that data is
                   collected within the boundaries defined in this policy. This
-                  applies to data that is collected in person, or by completing
-                  a form. When collecting data, Outcess Solutions Nigeria
-                  Limited will ensure that the Employee/Service User/Other
-                  Individual:
+                  applies to data that is collected in person or by completing a
+                  form. When collecting data, Outcess Solutions LLC will ensure
+                  that the Employee/Service User/Other Individual:
                 </p>
                 <ul className="reason-list-five">
                   <li>Clearly understands why the information is needed. B.</li>
@@ -220,7 +215,7 @@ const USDataPolicy = () => {
                   appropriately.
                 </p>
                 <p>
-                  It is Outcess Solutions Nigeria Limited's responsibility to
+                  It is Outcess Solutions LLC's responsibility to
                   ensure all personal and company data is nonrecoverable from
                   any computer system previously used within the organisation,
                   which has been passed on/sold to a third party.
@@ -232,15 +227,14 @@ const USDataPolicy = () => {
                 </p>
                 <p>
                   All Employee/Service Users/Other Individuals have the right to
-                  access the information Outcess Solutions Nigeria Limited holds
-                  about them. Outcess Solutions Nigeria Limited will also take
+                  access the information Outcess Solutions LLC holds about them.
+                  Outcess Solutions LLC will also take
                   reasonable steps to ensure that this information is kept up to
                   date by asking data subjects whether there have been any
                   changes.
                 </p>
                 <p>
-                  In addition, Outcess Solutions Nigeria Limited will ensure
-                  that:
+                  In addition, Outcess Solutions LLC will ensure that:
                 </p>
                 <ul className="reason-list-three">
                   <li>
@@ -288,14 +282,14 @@ const USDataPolicy = () => {
                 <p>
                   This policy will be updated as necessary to reflect best
                   practice in data management, security and control and to
-                  ensure compliance with any changes or amendments made to the
-                  Nigeria Data Protection Regulation 2019.
+                  ensure compliance with any changes or amendments made to
+                  applicable data protection and privacy laws.
                 </p>
 
                 <p>
                   In case of any queries or questions in relation to this policy
-                  please contact the Outcess Solutions Nigeria Limited Data
-                  Protection Officer.
+                  please contact the Outcess Solutions LLC Data Protection
+                  Officer.
                 </p>
               </li>
             </ol>
