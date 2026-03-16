@@ -1,9 +1,4 @@
 Options -MultiViews
 RewriteEngine On
-
-# If the request is for an existing file or directory, serve it directly
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Otherwise, send everything to index.html for React Router to handle
-RewriteRule ^ /index.html [QL]
+RewriteRule ^ index.html [QSA,L]

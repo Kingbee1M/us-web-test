@@ -7,7 +7,7 @@ const InTouch = () => {
         {title: 'Get in touch', desc: 'We’ love to hear from you. Our friendly team is always here to chat.', icon: null},
         {title: 'Chat to us', desc: 'info@outcess.com', icon: (<><CiMail/></>)},
         {title: 'Office', desc: 'Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', icon: (<><CiLocationOn/></>)},
-        {title: 'Phone', desc: '02013300308', icon: (<><FiPhone/></>)},
+        {title: 'Phone', desc: '+1 (204) 992-7513', icon: (<><FiPhone/></>)},
     ] 
     return (
         <div className='relative w-full flex lg:flex-row flex-col items-center lg:items-start justify-around gap-6 lg:gap-0 bg-pink py-12 lg:py-28 px-2'>
