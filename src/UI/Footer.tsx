@@ -11,11 +11,16 @@ type NavLinks = Record<string, Record<string, string>>;
 
 const FooterUS = () => {
     const links: NavLinks = {
-        'Company': {'About Us': '/us/about-Us','Services': '/us/services', 'ISO Quality Statement': '/isoqualitystatement', 'Privacy Policy': '/data-policy'},
-        'Support': {'Contact Us': '/us/contact-Us', 'Blog': 'https://outcess-microsite.blogspot.com/',},
+        'Company': {
+            'About Us': '/about-Us',
+            'Services': '/services', 
+            // 'ISO Quality Statement': '/isoqualitystatement', 
+            'Privacy Policy': '/data-policy'
+        },
+        'Support': {'Contact Us': '/contact-Us', 'Blog': 'https://blog.outcess.us/',},
     }
 
-    const infos = ['Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', 'info@outcess.com', '(201) 330-0308']
+    const infos = ['Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', 'info@outcess.com', '+1 (204) 992-7513']
     return (
         <footer className="w-full flex flex-col justify-center items-center bg-[#f7f7f7]">
             <div className="w-[90%] flex justify-evenly items-start gap-4 mt-16 bg-[#f7f7f7] pb-5">

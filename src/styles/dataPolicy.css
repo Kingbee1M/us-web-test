@@ -1,0 +1,38 @@
+.data-policy-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem 4rem;
+  box-sizing: border-box;
+}
+
+.document-outline {
+  width: min(100%, 960px);
+  color: #222222;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.document-outline h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+
+.document-outline p {
+  margin: 0.85rem 0;
+}
+
+.document-outline ol,
+.document-outline ul {
+  padding-left: 1.5rem;
+  margin: 0.85rem 0;
+}
+
+.reasons > ol {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.reason-highlight-heading {
+  font-weight: 700;
+}

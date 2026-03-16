@@ -12,6 +12,7 @@ import USAboutUs from "./USAboutsUs.tsx";
 import USAContactus from "./USAContactUs.tsx";
 import USAServices from "./USAServices.tsx";
 import USIndustries from "./USIndustries.tsx";
+import USDataPolicy from "./USDataPolicy.tsx";
 import ErrorBoundary from "./Components/errorBoundry.tsx";
 import NotFound from "./UI/notFound.tsx";
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/industries",
     element: <USIndustries />,
+  },
+  {
+    path: "/data-policy",
+    element: <USDataPolicy />,
   },
 
   { path: "*", element: <NotFound /> },
