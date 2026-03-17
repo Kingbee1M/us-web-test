@@ -76,7 +76,8 @@ const LandingHero = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="w-87.5 sm:w-125 lg:w-125 flex justify-center items-center"
                 >
-                    <VideoPlayer src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view'} width={500} />
+                    {/* <VideoPlayer src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view'} width={500} /> */}
+                    <VideoPlayer src={'https://drive.google.com/file/d/1kr2oJHyCDJfZuC6pinLq2J6Q3ZeBAxB7/view'} width={500} />
                 </motion.div>
             </section>
 
