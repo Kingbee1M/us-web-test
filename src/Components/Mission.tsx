@@ -4,7 +4,7 @@ import img3 from "../assets/img/stacking.webp"
 
 const Mission = () => {
     const datas = [
-        {id: 1,title: 'Our Mission', desc: 'To inspire and empower people, teams, and organizations to do more faster and smarter through the fusion of CX outsourcing, digital innovation, and emotional intelligence.', img: img1},
+        {id: 1,title: 'Our Mission', desc: 'To inspire and empower people, teams, and organizations to do more, faster and smarter through the fusion of CX outsourcing, digital innovation, and emotional intelligence.', img: img1},
         {id: 2,title: 'Our Vision', desc: "To redefine the standard for outsourced digital excellence by delivering scalable, world-class solutions that humanize the link between global brands and their customers.", img: img2},
         {id: 3,title: 'Our Purpose', desc: (<>To reimagine customer experience, one interaction at a time — through the power of human empathy and artificial intelligence. We don’t just handle processes; we build partnerships. <br/> Every conversation, every data point, every solution we design reflects our belief that technology should enhance human connection, not replace it.</>), img: img3},
     ]

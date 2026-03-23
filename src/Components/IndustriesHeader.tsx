@@ -7,7 +7,7 @@ const IndustriesHeader = () => {
             <p  className="w-4/5 sm:w-2/3 text-sm md:w-auto md:text-base text-center text-pretty text-text-color font-montserrat">At Outcess, we partner with brands across industries to create experiences that combine<br/>
             the precision of Artificial Intelligence with the warmth of human connection.<br/>
             Wherever your customers are, we help you reach them with empathy, intelligence, and<br/>
-             excellence at scale</p>
+             excellence at scale.</p>
 
             <Button variant="primary">Work With Us</Button>
         </header>

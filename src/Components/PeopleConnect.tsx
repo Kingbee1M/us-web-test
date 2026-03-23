@@ -17,7 +17,7 @@ const PeopleConnect = () => {
 
     const blocks = [
         {title: '19+ years', desc: "Delivering global CX and BPO", pic: img1, color: '#DDE4F0'},
-        {title: '3000+ & 4,000+', desc: "CRM seats and contact center seats deployed respectively", pic: img2, color: '#F3E5F5'},
+        {title: '3,000+ & 4,000+', desc: "CRM seats and contact center seats deployed respectively", pic: img2, color: '#F3E5F5'},
         {title: 'Up to 60%', desc: "Offshore cost advantage", pic: img3, color: '#FFF5CF'},
         {title: '21M+ interactions', desc: "Handled yearly", pic: img4, color: '#FFF5CF'},
         {title: '24/7 global delivery', desc: "Across multiple time zones", pic: img5, color: '#DDE4F0'},

@@ -4,9 +4,14 @@ import Mission from "./Components/Mission";
 import AboutQandA from "./Components/AboutQandA";
 import ItMatters from "./Components/ItMatters";
 import AboutBottom from "./Components/AboutBottom";
+import { useEffect } from "react";
 
 
 const USAboutUs = () => {
+    useEffect(() => {
+        document.title = "About Outcess US | AI-Native CX Outsourcing";
+    }, []);
+
     return (
         <UsaLayout>
             <>

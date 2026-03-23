@@ -4,7 +4,7 @@ import { FiPhone } from "react-icons/fi";
 
 const InTouch = () => {
     const acess = [
-        {title: 'Get in touch', desc: 'We’ love to hear from you. Our friendly team is always here to chat.', icon: null},
+        {title: 'Get in touch', desc: 'We are happy to hear from you. Our friendly team is always here to chat.', icon: null},
         {title: 'Chat to us', desc: 'info@outcess.com', icon: (<><CiMail/></>)},
         {title: 'Office', desc: 'Suite 125, 321 Ballenger Centre Drive, Frederick, MD 21703, USA', icon: (<><CiLocationOn/></>)},
         {title: 'Phone', desc: '+1 (204) 992-7513', icon: (<><FiPhone/></>)},

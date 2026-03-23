@@ -6,9 +6,14 @@ import ClearValue from './Components/ClearValue'
 import GlobalExpertise from './Components/GlobalExpertise'
 import Blog from './Components/Blog'
 import UsaLayout from './layout/USALayout'
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    document.title = "AI-Native BPO & CX Outsourcing | Outcess US";
+  }, []);
+
   return (
     <UsaLayout>
       <>

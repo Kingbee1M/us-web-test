@@ -216,7 +216,7 @@ const USDataPolicy = () => {
                 </p>
                 <p>
                   It is Outcess Solutions LLC's responsibility to
-                  ensure all personal and company data is nonrecoverable from
+                  ensure all personal and company data is non-recoverable from
                   any computer system previously used within the organisation,
                   which has been passed on/sold to a third party.
                 </p>
