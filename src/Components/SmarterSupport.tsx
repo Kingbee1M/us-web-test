@@ -19,7 +19,7 @@ const SmarterSupport = () => {
             {title: 'Industry-Specific Outsourcing', desc: ['Tailored CX & BPO for Ecommerce, Fintech, HealthTech, Telecom, Travel, and more.', 'Trained teams with domain knowledge.', 'Compliance-ready operations.', 'Flexible scaling for peak seasons.'], pic: img3, color: '#4caf5030'},
         ]
     return (
-        <section className="w-full flex flex-col items-center mt-32 bg-white text-text-color gap-3">
+        <section className="w-full flex flex-col items-center mt-10 lg:mt-16 bg-white text-text-color gap-3">
             
             <motion.header
             ref={ref}

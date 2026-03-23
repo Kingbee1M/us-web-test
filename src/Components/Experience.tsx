@@ -29,7 +29,7 @@ const Experience = () => {
             <img src={img5} className="w-full" alt="wavyup"/>
 
 
-            <div className='bg-pink flex flex-col items-center py-32 font-montserrat'>
+            <div className='bg-pink flex flex-col items-center pt-9 pb-12 lg:pb-32 font-montserrat'>
                 
                 <motion.header ref={ref} initial={ {y: -220, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : {}}

@@ -58,7 +58,7 @@ const IndustriesData = () => {
         {title: 'Government & Public Sector Outsourcing (via partnerships)', list: ['Efficient, transparent service delivery for citizens at scale.', 'Smooth enrollment, quicker issue resolution, and improved retention.'], desc: 'Our compliant and scalable public sector outsourcing solutions empower government agencies to serve citizens efficiently and transparently.', list2: ['Citizen helplines', 'Claims and benefits processing', 'Document management', 'Multilingual support']},
     ]
     return (
-        <section className="w-full h-200 mt-20 flex flex-col items-center gap-6">
+        <section className="w-full h-200 mt-10 flex flex-col items-center gap-6">
 
             <div className="w-4/5 flex justify-end gap-3">
                  {canScrollLeft && (

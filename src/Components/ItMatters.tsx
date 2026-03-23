@@ -16,7 +16,7 @@ const ItMatters = () => {
             {title: 'US-based', desc: "Operations in the US.", pic: (<><TbWorld /></>), color: '#F3E5F5'},
         ]
     return (
-        <section className="flex flex-col items-center w-full py-20 gap-8 bg-[#FEF2EA] relative">
+        <section className="flex flex-col items-center w-full pb-20 py-9 gap-8 bg-[#FEF2EA] relative">
             <h2 className="text-3xl md:text-5xl text-heading-color font-garamond font-bold">Why It Matters</h2>
             <p className="text-center w-4/5 xl:w-[68%] text-base sm:text-xl xl:text-xl font-montserrat">Because customer experience is no longer just about response time or resolution,
               it&apos;s about understanding emotion, predicting needs, and creating trust.<br/>

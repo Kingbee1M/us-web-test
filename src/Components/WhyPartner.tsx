@@ -28,7 +28,7 @@ const WhyPartner = () => {
             Built to elevate performance, reduce costs, and deliver the outcomes your business cares about most.
             </p>
 
-            <div className="w-full lg:w-[70%] flex justify-between items-center bg-[#F3E5F5] p-8 md:px-24 py-12 mt-16">
+            <div className="w-full lg:w-[70%] flex justify-between items-center bg-[#F3E5F5] p-8 md:px-24 py-12 mt-8">
             <h2 className="lg:text-5xl xl:leading-14 text-3xl font-semibold w-1/5 font-garamond">{current.title}</h2>
 
             <div className="w-2/5 sm:w-[30%] flex flex-col items-center gap-3">
@@ -57,7 +57,7 @@ const WhyPartner = () => {
             </div>
             </div>
 
-            <Button variant="primary" className="my-16">Work With Us</Button>
+            <Button variant="primary" className="my-5">Work With Us</Button>
         </section>
 
     )

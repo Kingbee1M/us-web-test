@@ -34,11 +34,11 @@ const PeopleConnect = () => {
                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
                 className="w-full"
                 >
-                    <svg viewBox="0 0 700 200" className="text-center">
+                    <svg viewBox="0 0 700 100" className="text-center">
                         <defs>
                         <path
                             id="curve"
-                            d="M 20 320 A 330 200 0 0 1 680 320"
+                            d="M 20 200 A 330 150 0 0 1 680 200"
                             fill="transparent"
                         />
                         </defs>

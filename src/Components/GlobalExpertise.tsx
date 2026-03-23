@@ -25,10 +25,10 @@ const GlobalExpertise = () => {
         {icon : img6, title: 'US presence with a strong offshore cost advantage', id: 6}
     ]
     return (
-            <div className="bg-dark-blue pt-40 pb-28 w-full flex flex-col items-center relative overflow-clip">
-                <div className="h-64 w-64 bg-[#1654bf] absolute bottom-[71%] right-[87%] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"></div>
+            <div className="bg-dark-blue pt-16 pb-12 lg:pb-20 w-full flex flex-col items-center relative overflow-clip">
+                <div className="h-64 hidden md:inline w-64 bg-[#1654bf] absolute bottom-[71%] right-[87%] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"></div>
                 <div className="h-64 w-64 bg-[#1654bf] absolute top-[71%] left-[93%] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"></div>
-                <h2 className="font-garamond italic text-2xl text-white">Global Expertise. Local Quality. Offshore Advantage.</h2>
+                <h2 className="font-garamond italic text-2xl text-whit text-center lg:text-left">Global Expertise. Local Quality. Offshore Advantage.</h2>
                  <img src={img7} className="w-full absolute bottom-0" alt="wavydown"/>
 
                  <div ref={ref} className='flex flex-wrap justify-between items-center w-[65%] gap-y-6 mt-6'>

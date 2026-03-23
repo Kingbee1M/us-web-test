@@ -32,7 +32,7 @@ const ClearValue = () => {
     ]
     return (
         <div className='w-full items-center flex flex-col bg-white'>
-            <div className='bg-white mt-44 w-[95%] flex flex-row flex-wrap justify-center items-start gap-y-12 gap-x-5'>
+            <div className='bg-white mt-8 w-[95%] flex flex-row flex-wrap justify-center items-start gap-y-12 gap-x-5'>
                 {values.map((value, index) => {
                     return (
                     
