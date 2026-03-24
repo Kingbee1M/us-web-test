@@ -22,7 +22,7 @@ const LandingHero = () => {
         return () => clearInterval(interval);
     }, [phrases.length]);
     return ( 
-       <div className="w-full flex flex-row justify-center items-center relative overflow-clip pt-16">
+       <div className="w-full flex flex-row justify-center items-center relative overflow-clip lg:pt-8">
             <div className="bg-primary-purple w-125500px] rounded-full flex absolute bottom-[60%] right-[80%]"></div>
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute bottom-[15%] left-[10%]"></div>
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute bottom-[28%] left-[35%]"></div>
@@ -30,7 +30,7 @@ const LandingHero = () => {
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute top-[17%] right-[2%]"></div>
             <div className="bg-white/30 backdrop-blur-md w-full h-300 absolute z-20"></div>
 
-            <section className="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center pb-16 z-30 mb-24">
+            <section className="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center pb-16 z-30 mb-1">
                 <motion.header
                 initial={{ x: -120, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}

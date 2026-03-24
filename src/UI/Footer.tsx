@@ -66,7 +66,7 @@ const FooterUS = () => {
                 </div>
             </div>
 
-            <div className="w-full flex justify-between items-center, xs:pl-5 py-16 xs:pr-24 sm:px-24 bg-primary-orange text-white">
+            <div className="w-full flex justify-between items-center, xs:pl-5 py-8 xs:pr-24 sm:px-24 bg-primary-orange text-white">
                 <p>© 2026 Outcess. All rights reserved.</p>
                 <div className="flex items-center gap-3 text-white">
                     <a href="https://www.instagram.com/outcess.us?igsh=emxjanNpN2p5YW1i" target="blank"  rel="noopener noreferrer" aria-label="Follow us on Instagram" className="text-white decoration-none text-lg sm:text-3xl"><RiInstagramFill /></a>
