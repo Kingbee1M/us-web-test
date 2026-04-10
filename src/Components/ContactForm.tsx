@@ -1,7 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { z } from "zod";
 import { toast } from 'react-toastify';
-import img from '../assets/svg/lightpinkwave.svg';
 import { hrmsBaseUrl } from "../shared/baseUrl";
 
 type ContactFormValues = z.infer<typeof ContactFormSchema>;
@@ -86,12 +85,12 @@ const ContactForm = () => {
       }}
       >
         {() => (
-          <Form className="w-[90%] lg:w-3/5 my-28 pl-10 flex justify-center flex-col gap-4">
+          <Form className="w-full lg:w-3/5 my-28 pl-10 flex justify-center items-center flex-col gap-4">
             <h1 className="text-4xl text-heading-color font-garamond font-bold">
               Contact Us
             </h1>
 
-            <p className="text-lg font-montserrat text-text-color">
+            <p className="text-lg font-montserrat text-text-color mb-5">
               Drop us a line! We are here to answer your questions 24/7
             </p>
 
@@ -131,7 +130,7 @@ const ContactForm = () => {
             <button
               type="submit"
               aria-label="submit"
-              className='w-[90%] sm:w-[70%] text-center bg-primary-orange hover:bg-hover-orange text-white py-2 px-4 text-base md:text-sm md:px-2 md:py-3 rounded-md'
+              className='w-[90%] sm:w-[70%] text-center bg-primary-orange hover:bg-hover-orange text-white py-2 px-4 text-base md:text-sm md:px-2 md:py-3 rounded-md mt-5'
             >
               Send Message
             </button>
@@ -139,7 +138,6 @@ const ContactForm = () => {
         )}
       </Formik>
 
-      <img src={img} alt="wave" className='w-full absolute bottom-0 ' />
     </div>
   );
 };

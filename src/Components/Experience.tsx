@@ -4,7 +4,6 @@ import img1 from '../assets/img/brain.png'
 import img2 from '../assets/img/heart.png'
 import img3 from '../assets/img/purpzap.png'
 import img4 from '../assets/img/target.png'
-import img5 from '../assets/svg/waveup.svg'
 import img6 from '../assets/img/wavedown.png'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -25,18 +24,18 @@ const Experience = () => {
         {title: 'Precision Targeting', desc: "Every interaction tailored to individual customer needs", pic: img4, color: '#00bcd414'},
     ]
     return (
-        <section className="flex flex-col items-center w-full bg-white relative">
-            <img src={img5} className="w-full" alt="wavyup"/>
+        <section className="flex flex-col items-center w-full bg-white relative mt-8">
 
+        <div className='w-full bg-[#c4d5f2c3] flex flex-col items-center pb-28'>
 
-            <div className='bg-pink flex flex-col items-center pt-9 pb-12 lg:pb-32 font-montserrat'>
+            <div className=' flex flex-col lg:flex-row items-center pt-9 pb-12 lg:pb-0 font-montserrat mt-10'>
                 
                 <motion.header ref={ref} initial={ {y: -220, opacity: 0 }}
                 animate={isInView ? { y: 0, opacity: 1 } : {}}
                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-                className="full flex flex-col items-center gap-8 mb-">
-                    <h2 className='w-2/3 lg:w-auto text-center font-bold font-garamond text-heading-color text-2xl lg:text-4xl'>Experience Designed With Insight + Empathy</h2>
-                    <p className='text-center text-text-color text-sm lg:text-base'>
+                className="full flex flex-col items-center gap-8 mt-10">
+                    <h2 className='w-2/3 text-center font-bold font-garamond text-heading-color text-2xl lg:text-4xl lg:w-3/5'>Experience Designed With Insight + Empathy</h2>
+                    <p className='text-center text-text-color text-sm lg:text-base leading-7 w-[83%]'>
                         We don&apos;t just manage tasks, we manage relationships.<br />
                         Our agents are trained to read tone, understand emotion, and respond with clarity. AI tools provide real-time <br />
                         guidance, helping them resolve issues faster and with a human touch.
@@ -44,7 +43,7 @@ const Experience = () => {
                     </p>
                 </motion.header>
 
-                <div className='flex flex-wrap justify-center lg:justify-end items-center w-[90%] lg:w-[70%] gap-y-6 mt-16 ml-0 lg:ml-24'>
+                <div className='flex flex-wrap justify-center lg:justify-start items-center gap-5 w-full lg:w-[70%] gap-y-6 mt-16 ml-0 lg:ml-14'>
                     {infos.map((info, index) => {
                             const fromLeft = index % 2 === 0;
 
@@ -78,6 +77,9 @@ const Experience = () => {
                     )})}
                 </div>
 
+                
+
+            </div>
                 <motion.div
                 initial={{y: 100, opacity: 0}}
                 animate={isInView ? {y: 0, opacity: 1} : {}}
@@ -85,10 +87,7 @@ const Experience = () => {
                 >
                     <Button variant='primary' showArrow={true} className='mt-20'>See Our Impact</Button>
                 </motion.div>
-
             </div>
-
-
             <img src={img6} className="w-full absolute bottom-0" alt="wavydown"/>
         </section>
     )

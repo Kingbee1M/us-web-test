@@ -20,15 +20,15 @@ const AboutQandA  = () => {
         );
     };
     return (
-        <section className="bg-[#FFFBF8] w-full flex flex-col items-center py-12 md:pb-16 lg:pb-24 gap-7 relative">
+        <section className="bg-[#ff660019] w-full flex flex-col items-center py-12 md:pb-16 lg:pb-24 gap-7 relative">
             <h2 className="font-garamond font-bold text-3xl md:text-5xl text-heading-color">How We Deliver</h2>
             <p className="text-sm sm:text-base w-[90%] sm:w-4/5 lg:w-2/5 text-text-color font-montserrat text-center">Combining deep expertise with collaborative innovation to deliver solutions that truly meet your needs</p>
 
             <div className="flex flex-col gap-3 w-[70%]">
                 {QAs.map((qa) => (
-                    <div key={qa.id} className={`border-2 border-solid border-[#F7B081] w-full p-3 flex justify-between items-start rounded-lg ${openIds.includes(qa.id) && 'bg-[#FDE0CD]'}`}>
+                    <div key={qa.id} className={`border-[0.5px] border-solid border-[#F7B081] w-full p-3 flex justify-between items-start rounded-lg ${openIds.includes(qa.id) && 'bg-white'}`}>
                         <div >
-                            <h3 className="font-semibold font-montserrat mb-2">{qa.id}. {qa.Q}</h3>
+                            <h3 className="font-semibold font-montserrat mb-2">{qa.Q}</h3>
                             {openIds.includes(qa.id) && (
                                 <p className="font-montserrat">{qa.A}</p>
                             )}

@@ -27,7 +27,7 @@ const AboutHeader = () => {
 
 
     return (
-        <header className="w-full flex flex-col items-center gap-8 mt-5">
+        <header className="w-full flex flex-col items-center gap-2 mt-24">
             <h1 className="w-[70%]  text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-garamond font-bold text-center">Blending Artificial Intelligence With Emotional Intelligence To Power Human-Centered Experiences</h1>
             <div className="relative w-full max-w-xl h-auto">
         <AnimatePresence mode="wait">
@@ -38,7 +38,7 @@ const AboutHeader = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5 }}
-            className="p-6 bg-white rounded w-full"
+            className="p-6 bg-white rounded w-full leading-7"
           >
             {heroData[currentIndex]}
           </motion.div>
@@ -58,7 +58,7 @@ const AboutHeader = () => {
         </div>
       </div>
 
-            <Button variant="primary">Partner With Outcess US</Button>
+            <Button variant="primary" className="my-10">Partner With Outcess US</Button>
             
             <div className="lg:w-225 md:w-175 sm:w-137.5 w-112.5 flex justify-center items-center">
                 {/* <VideoPlayer width={1000} src={'https://drive.google.com/file/d/1uQU_Kqozxhvd2AeUg6vE6qmjH2SyBgJ6/view'} /> */}

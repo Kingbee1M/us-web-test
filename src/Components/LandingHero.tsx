@@ -23,14 +23,14 @@ const LandingHero = () => {
     }, [phrases.length]);
     return ( 
        <div className="w-full flex flex-row justify-center items-center relative overflow-clip lg:pt-8">
-            <div className="bg-primary-purple w-125500px] rounded-full flex absolute bottom-[60%] right-[80%]"></div>
+            {/* <div className="bg-primary-purple w-125500px] rounded-full flex absolute bottom-[60%] right-[80%]"></div>
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute bottom-[15%] left-[10%]"></div>
             <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute bottom-[28%] left-[35%]"></div>
             <div className="bg-secondary-purple w-75 h-75 rounded-full flex absolute top-[70%] left-[85%]"></div>
-            <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute top-[17%] right-[2%]"></div>
+            <div className="bg-secondary-purple w-16 h-16 rounded-full flex absolute top-[17%] right-[2%]"></div> */}
             <div className="bg-white/30 backdrop-blur-md w-full h-300 absolute z-20"></div>
 
-            <section className="w-full lg:w-[90%] flex flex-col lg:flex-row justify-between items-center pb-16 z-30 mb-1">
+            <section className="w-full lg:w-[90%] flex flex-col lg:flex-row gap-4 items-center pb-16 z-30 mb-1 mt-8">
                 <motion.header
                 initial={{ x: -120, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -38,7 +38,7 @@ const LandingHero = () => {
                 className="w-[90%] lg:w-1/2 flex flex-col items-start gap-8 pb-8 lg:pb-0"
                 >
 
-                    <h1 className="text-[19px] sm:text-2xl xl:text-xl flex items-center gap-0.5 font-extrabold font-garamond "><span className="font-garamond ">Powered by AI.</span>
+                    <h1 className="text-[19px] sm:text-2xl xl:text-[36px] flex items-center gap-0.5 font-extrabold font-garamond "><span className="font-garamond ">Powered by AI.</span>
 
                             <div className="h-10 overflow-hidden relative">
                             <div
@@ -61,12 +61,12 @@ const LandingHero = () => {
                     </h1>
 
 
-                    <p className="w-4/5 text-[11px] lg:text-[14px] font-montserrat ">Outcess delivers customer experiences that feel fast, human, and reliable.
+                    <p className="w-4/5 text-[11px] lg:text-[14px] font-montserrat leading-6.5">Outcess delivers customer experiences that feel fast, human, and reliable.
                         We combine AI, analytics, and trained support teams to help brands improve retention, loyalty, and customer satisfaction.</p>
                     
                     <div className="flex flex-row gap-2 sm:gap-3 lg:gap-4">
+                        <Button variant="border" showArrow={true} className="text-[10px] p-2 lg:text-xs border-primary-orange text-primary-orange" >Explore Our Solutions</Button>
                         <Button variant="primary" showArrow={true} className="text-[10px] p-2 lg:text-xs" >Partner With Us</Button>
-                        <Button variant="border" showArrow={true} className="text-[10px] p-2 lg:text-xs" >Explore Our Solutions</Button>
                     </div>
                 </motion.header>
                 

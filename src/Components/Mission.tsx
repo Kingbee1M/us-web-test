@@ -16,12 +16,12 @@ const Mission = () => {
                     return (
                         <div key={index} className={`w-full flex ${data.id === 2 ? 'flex-row-reverse' : 'flex-row'} justify-between items-center`}>
                             <div className={`w-[46%] flex flex-col items-start gap-2`}>
-                                <h2 className={`font-bold font-garamond text-2xl sm:text-4xl w-auto grow-0`}>{data.title}</h2>
-                                <p title="tap/hover to view the full text" className={`font-montserrat text-text-color text-sm sm:text-base lg:text-xl w-full text-pretty`}> {data.desc}</p>
+                                <h2 className={`font-bold font-garamond text-2xl sm:text-[32px] w-auto grow-0`}>{data.title}</h2>
+                                <p className={`font-montserrat text-text-color text-sm sm:text-base lg:text-base leading-6.5 w-full text-pretty`}> {data.desc}</p>
                             </div>
 
-                            <div className={`w-42.5 sm:w-50 lg:w-75 xl:w-100 h-42.5 sm:h-50 lg:h-75 xl:h-100 rounded-full border-4 border-solid overflow-clip flex justify-center items-center ${data.id === 1? 'border-[#4B80DA]' : data.id === 2 ? 'border-[#9C27B0]' : 'border-[#FBE07A]'} `}>
-                                <img src={data.img} alt={data.title}loading="lazy" className="w-42.5 sm:w-50 lg:w-75 xl:w-100 h-42.5 sm:h-50 lg:h-75 xl:h-100 object-cover" />
+                            <div className={`w-42.5 sm:w-50 lg:w-75 xl:w-80 h-42.5 sm:h-50 lg:h-75 xl:h-80 rounded-full border-4 border-solid overflow-clip flex justify-center items-center ${data.id === 1? 'border-[#4B80DA]' : data.id === 2 ? 'border-[#9C27B0]' : 'border-[#FBE07A]'} `}>
+                                <img src={data.img} alt={data.title}loading="lazy" className="w-full h-full object-cover" />
                             </div>
                             
                         </div>

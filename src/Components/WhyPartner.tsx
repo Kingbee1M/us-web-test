@@ -24,21 +24,24 @@ const WhyPartner = () => {
     return (
         <section className="w-full flex flex-col items-center gap-4">
             <h2 className="text-4xl font-bold text-center font-garamond">Why Partner with Outcess US?</h2>
-            <p className="text-base sm:text-xl font-montserrat text-center w-[96%] lg:w-[55%] ">
+            <p className="text-base font-montserrat text-center w-[96%] lg:w-[45%] ">
             Built to elevate performance, reduce costs, and deliver the outcomes your business cares about most.
             </p>
 
-            <div className="w-full lg:w-[70%] flex justify-between items-center bg-[#F3E5F5] p-8 md:px-24 py-12 mt-8">
-            <h2 className="lg:text-5xl xl:leading-14 text-3xl font-semibold w-1/5 font-garamond">{current.title}</h2>
+            <Button variant="primary" className="">Work With Us</Button>
 
-            <div className="w-2/5 sm:w-[30%] flex flex-col items-center gap-3">
-                <p className="text-base xl:text-base text-text-color w-full lg:w-[80%] font-montserrat">{current.desc}</p>
+            <div className="w-full lg:w-[70%] flex flex-col justify-between items-center gap-6 bg-[#FF660033] rounded-2xl p-8 md:px-24 py-12 mt-10 mb-8">
+            <div className='w-full flex items-center justify-between'>
+                <h2 className="lg:text-5xl xl:leading-14 text-3xl font-semibold w-2/5 font-garamond">{current.title}</h2>
+                <p className="text-base xl:text-base text-text-color lg:w-[35%] text-center font-medium font-montserrat">{current.desc}</p>
+            </div>
+            
 
-                <div className="flex items-center gap-4">
-                
+            <div className="w-2/5 sm:w-9/10 flex justify-end gap-3">
+                            
                 <button
                     onClick={() => change("prev")}
-                    className="text-3xl rounded-full bg-[#F3E5F5]"
+                    className="text-3xl rounded-full cursor-pointer"
                 >
                     <IoChevronBack />
                 </button>
@@ -48,16 +51,12 @@ const WhyPartner = () => {
 
                 <button
                     onClick={() => change("next")}
-                    className="text-3xl rounded-full bg-[#F3E5F5]"
+                    className="text-3xl rounded-full cursor-pointer"
                 >
                     <IoChevronForward />
                 </button>
-
-                </div>
             </div>
             </div>
-
-            <Button variant="primary" className="my-5">Work With Us</Button>
         </section>
 
     )

@@ -79,18 +79,18 @@ const IndustriesData = () => {
                 <button
                 key={index}
                 onClick={() => setActiveId(activeId === index ? null : index)}
-                className={`relative group cursor-pointer group w-103.75  ${activeId === index? 'h-162.5 lg:h-162.5': 'h-112.5 hover:h-162.5'} overflow-hidden p-3 flex flex-col shrink-0 gap-3 border-2 border-orange-border rounded-lg bg-bot-comp-bg transition-all duration-500 ease-out`}>
-                    <h2 className="w-full text-3xl font-semibold font-garamond">{data.title}</h2>
+                className={`relative group cursor-pointer group w-103.75  ${activeId === index? 'h-162.5 lg:h-162.5': 'h-112.5 hover:h-132.5'} overflow-hidden p-5 flex flex-col shrink-0 gap-3 border-2 border-orange-border rounded-lg bg-bot-comp-bg transition-all duration-500 ease-out`}>
+                    <h2 className="w-full text-2xl font-semibold font-garamond text-left">{data.title}</h2>
                     <ul className="list-disc list-outside w-full flex flex-col gap-3">
                         {data.list.map((lis) => (
-                            <li key={lis} className="flex items-center gap-2 w-full text-xl font-montserrat leading-relaxed text-text-color text-left"><PiStarFourLight className="text-[25px]"/>{lis}</li>
+                            <li key={lis} className="flex items-center gap-2 w-full text-[16px] font-montserrat leading-relaxed text-text-color text-left"><PiStarFourLight className="text-[25px]"/>{lis}</li>
                         ))}
                     </ul>
-                    <p className="text-xl font-montserrat leading-tight text-text-color text-left">{data.desc}</p>
+                    <p className="text-xl font-montserrat leading-7 text-text-color text-left text-[16px] ">{data.desc}</p>
                     <p className={`w-full flex justify-end ${activeId === index ? 'hidden' : 'flex'} absolute bottom-2 right-2`}><IoIosArrowRoundDown className="text-2xl"/></p>
-                    <ul className={`list-none flex-col gap-3 ${activeId === index ? 'flex' : 'hidden'} group-hover:flex`}>
+                    <ul className={`list-none flex-col gap-3 mt-5 ${activeId === index ? 'flex' : 'hidden'} group-hover:flex`}>
                         {data.list2.map((lis) => (
-                            <li key={lis} className="flex items-center w-full text-xl font-montserrat leading-tight text-text-color text-left"><IoIosArrowRoundForward className="text-lg" />{lis}</li>
+                            <li key={lis} className="flex items-center w-full text-[16px] font-montserrat leading-tight text-text-color text-left"><IoIosArrowRoundForward className="text-lg" />{lis}</li>
                         ))}
                     </ul>
                 </button>

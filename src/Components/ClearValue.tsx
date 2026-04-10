@@ -32,7 +32,7 @@ const ClearValue = () => {
     ]
     return (
         <div className='w-full items-center flex flex-col bg-white'>
-            <div className='bg-white mt-8 w-[95%] flex flex-row flex-wrap justify-center items-start gap-y-12 gap-x-5'>
+            <div className='bg-white mt-8 w-[95%] flex flex-row flex-wrap justify-center gap-y-12 gap-x-5'>
                 {values.map((value, index) => {
                     return (
                     
@@ -40,19 +40,19 @@ const ClearValue = () => {
                         <motion.div
                         ref={ref}
                         key={index} 
-                        className='w-92.5 h-100'
+                        className='w-92.5 rounded-lg'
                         initial={{x: -150, opacity: 0}}
                         animate={isInView ? {x: 0, opacity: 1} : {}}
                         transition={{duration: 1.2, ease: 'easeOut', delay: 1}}
                         >
-                            <h2 className='text-4xl font-garamond text-heading-color mt-9 mb-1'>{value.title}</h2>
+                            <h2 className='text-4xl font-garamond text-heading-color mt-9 font-semibold mb-8 '>{value.title}</h2>
                             
                                                         {typeof value.desc === "string" && (
-                            <p className='text-text-color text-[15px] font-montserrat'>{value.desc}</p>
+                            <p className='text-text-color text-[15px] font-montserrat leading-7'>{value.desc}</p>
                             )}
                         </motion.div>
                     ) : (
-                        <div key={index} className='w-92.5 border border-[#d5d5d5] h-162.5 flex flex-col justify-start items-start pl-6 pt-6'>
+                        <div key={index} className='w-92.5 border border-[#d5d5d5] flex flex-col justify-start items-start pl-6 pt-6 rounded-lg'>
                             <div className='w-12 h-12 p-2 rounded-lg flex justify-center items-center mb-8' style={{backgroundColor: value.color || '#cccccc'}}>
                                 <img src={value.icon} alt={value.title} className='w-7.5 h-7.5' />
                             </div>
@@ -64,7 +64,7 @@ const ClearValue = () => {
                                         <h4 className='font-demibold text-base mb-2 w-full my-3'>{key}</h4>
                                         <ul className='list-disc pl-4 w-full '>
                                             {val.map((item, i) => (
-                                                <li key={i} className='text-base text-text-color mt-1 font-montserrat'>{item}</li>
+                                                <li key={i} className='text-base text-text-color mt-1 font-montserrat leading-7'>{item}</li>
                                             ))}
                                         </ul>
                                     </div>

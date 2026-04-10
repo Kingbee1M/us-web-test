@@ -13,11 +13,11 @@ const CoreSolutions = () => {
     return (
         <div className='w-full flex flex-col relative'>
             <img src={wave} alt='waveup' className='w-full'/>
-            <div className='bg-[#F3E5F5] w-full flex flex-col items-center gap-5 pb-32'>
+            <div className='bg-[#c4d5f2c3] w-full flex flex-col items-center gap-5 pb-32'>
 
                 <h2 className='font-garamond text-4xl font-bold '>Our Core Solutions</h2>
 
-                <div className='w-full flex flex-wrap justify-around gap-y-12 items-stretch px-2'>
+                <div className='w-full flex flex-wrap justify-around gap-y-12 items-stretch px-2 mt-16'>
                     {cores.map((core, index) => (
                    <CoreCards key={index} core={core} />
                     ))}

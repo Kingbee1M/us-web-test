@@ -10,7 +10,7 @@ const InTouch = () => {
         {title: 'Phone', desc: '+1 (204) 992-7513', icon: (<><FiPhone/></>)},
     ] 
     return (
-        <div className='relative w-full flex lg:flex-row flex-col items-center lg:items-start justify-around gap-6 lg:gap-0 bg-pink py-9 lg:py-16 px-2'>
+        <div className='relative w-full flex lg:flex-row flex-col items-center lg:items-start justify-around gap-6 lg:gap-0 bg-[#c4d5f2c3] py-9 lg:py-16 px-2'>
             <img src={img} alt="wave" className='w-full absolute -top-3 lg:-top-8' />
             <div className='w-2/3 lg:w-[90%] xl:w-full flex lg:flex-row flex-col items-center lg:items-start justify-around gap-6 lg:gap-0'>
             {acess.map((ace, index) => {

@@ -28,8 +28,8 @@ const SmarterSupport = () => {
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
             className="w-full flex flex-col items-center gap-8"
             >
-                <h2 className="text-blue-shade text-2xl sm:text-3xl lg:text-4xl font-garamond">Smarter Support. Better Outcomes.</h2>
-                <p className="font-montserrat w-[47%] text-center text-sm">Our solutions improve customer experience, streamline operations, and reduce costs powered by AI, delivered by experienced people</p>
+                <h2 className="text-blue-shade text-2xl sm:text-3xl lg:text-4xl font-garamond font-semibold">Smarter Support. Better Outcomes.</h2>
+                <p className="font-montserrat w-[47%] text-center text-sm lg:text-base leading-7">Our solutions improve customer experience, streamline operations, and reduce costs powered by AI, delivered by experienced people</p>
             </motion.header>
             
             
@@ -38,9 +38,9 @@ const SmarterSupport = () => {
             initial= {{y: 130, opacity: 0}}
             animate={isInView ? {y: 0, opacity: 1} : {}}
             transition={{duration: 1.2, ease: 'easeOut', delay: 0.2}}
-            className='flex flex-row flex-wrap justify-center items-start gap-6 w-4/5 mt-16 mb-24'>
+            className='flex flex-row flex-wrap justify-center items-start gap-6 w-full mt-16 mb-8'>
                 {options.map((option, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center gap-8 w-75 h-100 rounded-lg" style={{border: `3px solid ${option.color}`}}>
+                    <div key={index} className="flex flex-col items-center justify-center gap-8 w-85 h-90 rounded-lg" style={{border: `3px solid ${option.color}`}}>
                             <img src={option.pic} alt={option.title} className="w-12 h-12" />
                         <div className="flex flex-col justify-center items-center w-full">
                             <h3 className="text-[18px] font-semibold text-center">{option.title}</h3>

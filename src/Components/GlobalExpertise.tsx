@@ -28,7 +28,7 @@ const GlobalExpertise = () => {
             <div className="bg-dark-blue pt-16 pb-12 lg:pb-20 w-full flex flex-col items-center relative overflow-clip">
                 <div className="h-64 hidden md:inline w-64 bg-[#1654bf] absolute bottom-[71%] right-[87%] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"></div>
                 <div className="h-64 w-64 bg-[#1654bf] absolute top-[71%] left-[93%] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"></div>
-                <h2 className="font-garamond italic text-2xl text-whit text-center lg:text-left">Global Expertise. Local Quality. Offshore Advantage.</h2>
+                <h2 className="font-garamond italic text-2xl text-whit text-center lg:text-left text-white! mb-6">Global Expertise. Local Quality. Offshore Advantage.</h2>
                  <img src={img7} className="w-full absolute bottom-0" alt="wavydown"/>
 
                  <div ref={ref} className='flex flex-wrap justify-between items-center w-[65%] gap-y-6 mt-6'>
@@ -39,7 +39,7 @@ const GlobalExpertise = () => {
                         return (
                         <motion.div
                         key={point.title}
-                        className='flex items-center w-100 bg-[#004bcc] py-3 pr-5 pl-3 gap-2 rounded-lg'
+                        className='flex items-center w-100 bg-[#004bcc] py-3 pr-5 pl-3 gap-4 rounded-lg'
                         initial={{ x: fromLeft ? -100 : third ? 180 : fourth ? -200 : 100, y: third ? 100 : fourth ?100 : 0, opacity: 0}}
                         animate={isInView ? { x: 0, y: 0, opacity: 1} : {}}
                         viewport={{ once: true }}
@@ -56,7 +56,7 @@ const GlobalExpertise = () => {
                     )})}
                  </div>
 
-                <Button variant='tertiary' showArrow={true} className='mt-12'>Work With Us</Button>
+                <Button variant='tertiary' showArrow={true} className='mt-12 mb-16'>Work With Us</Button>
             </div>
     )
 }
